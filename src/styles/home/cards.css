@@ -1,0 +1,121 @@
+
+.container{
+    margin: 10px ;
+}
+
+.moneyValue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.subcontainer1{
+    display: flex;
+    flex-direction: row;
+}
+
+.subcontainer1 .carrousel-wrapper{
+    border: 1px solid black;
+    background-color: #dee2e6;
+    margin-left: 30px;
+    display: flex;
+    flex:1; 
+    justify-content: center;
+}
+#myCarousel{
+    width: 100%;
+}
+
+.subcontainer1 .carrousel-wrapper img{
+    height: 350px;
+}
+
+#moneyInput1, #moneyInput2{
+    width: 30% !important;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    margin:8px 24px;
+    height: inherit;
+}
+
+
+.cards-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    flex: 0.7;
+}
+
+.card{
+    display: flex;
+    flex: 1;
+    height: 230px;
+    align-items: start;
+
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.card img {
+    height: 131px;
+    width: 100%;
+    object-fit: contain;
+}
+.card a {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.card span {
+    color: #0000008c;
+    font-size: 13px;
+}
+
+.card b {
+color: green;
+font-size: 14px;
+}
+
+.side-wrapper{
+    display: flex;
+    flex:0.3;
+    flex-direction: column;
+    height: 100%;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.small-card{
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 5px;
+}
+
+.small-card img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.small-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 20px;
+}
