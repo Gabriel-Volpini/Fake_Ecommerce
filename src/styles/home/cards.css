@@ -119,3 +119,10 @@ font-size: 14px;
     justify-content: center;
     padding-left: 20px;
 }
+.small-card span{
+    color: #0000008c;
+    font-size: 13px;
+}
+.small-card b {
+    color: green;
+}

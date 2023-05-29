@@ -1,0 +1,107 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    padding-top: 16px;
+}
+
+nav img{
+    height: 80px;
+    border: 1px solid rgb(222, 226, 230);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+
+nav .menu{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+nav .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 95%;
+    height: 30px
+}
+
+nav .bottom{
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
+}
+
+nav .bottom .search{
+    display: flex;
+    padding: 15px 0px;
+    width: 50%;
+    position: relative;
+}
+
+nav .bottom .search .search-data{
+    position: absolute;
+    top: 47px;
+    left: 3px;
+    right: 3px;
+    height: 200px;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid #a5a5a5;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    display: none;
+    padding: 20px;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+nav .bottom .search input{
+    height: 30px;
+
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+nav .bottom .search button{
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .bottom .user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav .bottom .user-info .store-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-right: 40px;
+
+    color: #0000008c;
+}
+
+nav .bottom .user-info button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 40px;
+}

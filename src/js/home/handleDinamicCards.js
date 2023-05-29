@@ -6,11 +6,12 @@ const route = {
 const makeCard = ({ id, title, price, image, rating, category }) => {
     const div = document.createElement('div');
     div.classList.add("card");
+    div.setAttribute('category', category);
     
 
     const img = document.createElement('img');
     img.src = image;
-    // div.appendChild(img);
+    div.appendChild(img);
 
     const a = document.createElement('a')
     a.textContent = title.slice(0, 13).concat('...')
@@ -29,10 +30,10 @@ const makeCard = ({ id, title, price, image, rating, category }) => {
     return div;
 }
 
-const makeSmallCard = ({ id, title, price, image, rating }) => {
+const makeSmallCard = ({ id, title, price, image, rating, category }) => {
     const div = document.createElement('div');
     div.classList.add("small-card");
-    // div.setAttribute('category', category);
+    div.setAttribute('category', category);
 
     const img = document.createElement('img');
     img.src = image;

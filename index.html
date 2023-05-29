@@ -8,88 +8,73 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./src/styles/defaults.css">
     <link rel="stylesheet" type="text/css" href="./src/styles/home/cards.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/home/filter.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/home/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="./imgs/logo.png" alt="Logomarca" class="logo">
-        </a>
+    <nav>
+        <img src="./imgs/logo.png">
+
         <div class="menu">
             <div class="top">
-                <div>Welcome Gabriel Nagem Volpini (652936)! </div>
+                <div>Welcome Back!</div>
 
                 <div>
-                    <a href="#">Sing in</a> |
-                    <a href="#">Register</a> |
-                    <a href="#">My account</a> |
-                    <a href="#">Track order</a>
+                    <a href="/">Sing in</a> |
+                    <a href="/">Register</a> |
+                    <a href="/">My account</a> |
+                    <a href="/">Track order</a>
                 </div>
             </div>
+            
             <div class="bottom">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control"
-                        placeholder="Search for a product, Category, Sellers or a Brand">
+                
+                <div class="search">
+                    <input type="text" class="form-control" placeholder="Search for a product" id="search-input">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button">
+                        <button class="btn btn-outline-secondary" type="button" id="search-button">
                             <i class="fas fa-search"></i>
                             <span class="ml-2">Search</span>
                         </button>
                     </div>
+
+                    <div class="search-data" id="search-data-response"></div>
                 </div>
 
-                <div>
-                    Cash on Delivery | 30 Day Return <br />
-                    24/7 Customer Service
-                    <b>1800 00 11 22</b>
+                <div class="user-info">
+                    <div class="store-info">
+                        <span>Cash on Delivery | 30 Day Return </span>
+                        <b>1800 00 11 22</b>
+                    </div>
+
+                    <button class="btn btn-outline-secondary btn-square">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
                 </div>
-                <button class="btn btn-outline-secondary btn-square">
-                    <i class="fas fa-shopping-cart"></i>
-                    My Cart
-                </button>
 
             </div>
     </nav>
 
     <div class="container mt-4">
         <div class="subcontainer1">
+            
+            <div class="side-info" >
 
-            <div class="col-md-4 border rounded p-3 bg-light">
-
-                <b>Quick find - Choose a product</b>
-                <br />
-                <span class="mt-5 mb-5">Find the right product at the right place</span>
-
-                <select class="form-control mb-3">
-                    <option>Type</option>
-                    <option>Type</option>
-                    <option>Type</option>
-                </select>
-                <select class="form-control mb-3">
-                    <option>Brand</option>
-                    <option>Brand</option>
-                    <option>Brand</option>
-                </select>
-                <select class="form-control mb-3">
-                    <option>Category</option>
-                    <option>Category</option>
-                    <option>Category</option>
-                </select>
-
-                <div class="form-inline mb-3 moneyValue">
-                    $
-                    <input type="text" class="form-control" id="moneyInput1" placeholder="From">
-                    $
-                    <input type="text" class="form-control" id="moneyInput2" placeholder="To">
+                <div class="user">
+                    <img src="./imgs/user.png"/>
+                    <b>Gabriel Nagem Volpini</b>
+                    <span>Matrícula: 652936</span>
                 </div>
 
-                <button class="btn btn-primary form-control mb-3">
-                    <i class="fas fa-search"></i>
-                    <span class="ml-2">Search</span>
-                </button>
+                <div class="category-filter" id="category-filter"> 
+                    <b>Quick find</b>
+                    <span>Choose a category</span>
+                </div>
+                
             </div>
 
             <div class="carrousel-wrapper">
@@ -138,5 +123,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="./src/js/home/handleDinamicCards.js"></script>
-    <script src="./src/js/home/handleCategory.js"></script>
+    <script src="./src/js/home/handleFilter.js"></script>
+    <script src="./src/js/home/handleSearch.js"></script>
 </html>
