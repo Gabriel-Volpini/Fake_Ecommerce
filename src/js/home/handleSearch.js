@@ -18,7 +18,7 @@ const doSearch = () => {
     fetch('https://fakestoreapi.com/products')
         .then(res => res.json())
         .then(json => {
-            const a = json.filter(item => item.title.toLowerCase(0).includes(inputValue))
+            const a = json.filter(item => item.title.toLowerCase().includes(inputValue.toLowerCase()))
 
             searchDataDiv.style.display = 'flex';
             a.forEach(item => {

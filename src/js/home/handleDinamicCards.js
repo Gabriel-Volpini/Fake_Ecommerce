@@ -15,7 +15,7 @@ const makeCard = ({ id, title, price, image, rating, category }) => {
 
     const a = document.createElement('a')
     a.textContent = title.slice(0, 13).concat('...')
-    a.href = '/detalhes?id=' + id
+    a.href = 'detalhes.html?id=' + id
     div.appendChild(a);
 
     const b = document.createElement('b')
@@ -44,7 +44,7 @@ const makeSmallCard = ({ id, title, price, image, rating, category }) => {
 
     const a = document.createElement('a')
     a.textContent = title.slice(0, 20).concat('...')
-    a.href = '/detalhes?id=' + id
+    a.href = 'detalhes.html?id=' + id
     sideDiv.appendChild(a);
 
     const span = document.createElement('span')

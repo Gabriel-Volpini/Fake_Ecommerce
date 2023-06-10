@@ -1,0 +1,93 @@
+.body-wrapper{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-detalhes{
+    width: 500px;
+    height: 700px;
+}
+
+.card-detalhes img {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+
+    padding:15px;
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(222, 226, 230);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-detalhes .information{
+    padding:15px;
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(222, 226, 230);
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-detalhes .information .title{
+    font-size: 20px;
+}
+
+.card-detalhes .information .category{
+    font-size: 15px;
+    color: #7e7373;
+    text-transform: capitalize;
+}
+.card-detalhes .information .rating{
+    font-size: 15px;
+    color: #727272ad;
+}
+.card-detalhes .information .description{
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-detalhes .information .price{
+    color: green;
+    margin-top: 12px;
+    font-size: 26px;
+}
+
+.card-detalhes .make-order{
+    margin-top: 10px;
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(222, 226, 230);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.card-detalhes .make-order a{
+    padding: 10px 40px;
+    color:white;
+}
+
+.card-detalhes .make-order .cancelar{
+    background-color: #c70505b3;
+    border: 1px solid #932727;
+}
+
+.card-detalhes .make-order .cancelar:hover {
+    background-color: #932727;
+}
+
+.card-detalhes .make-order .comprar{
+    background-color: #009f29a6;
+    border: 1px solid #306e40;
+}
+
+.card-detalhes .make-order .comprar:hover {
+    background-color: #306e40;
+}
